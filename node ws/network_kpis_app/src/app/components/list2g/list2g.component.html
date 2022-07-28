@@ -1,4 +1,4 @@
-<p>list2g works!</p>
+<!-- <p>list2g works!</p>
 <table>
 
     <tr *ngFor="let element of dg">
@@ -9,4 +9,37 @@
             {{element.month}}
         </td>
     </tr>
-</table>
+</table> -->
+
+<body>
+    <div id="wrapper">
+     <h1>LISTE 2G</h1>
+     
+     <table id="keywords" cellspacing="0" cellpadding="0">
+       <thead>
+         <tr>
+           <th><span>SITE NAME</span></th>
+           <th><span>Date</span></th>
+           <th><span>Radio DROPE</span></th>
+           <th><span>CONGESTION</span></th>
+           <th><span>Hand Over</span></th>
+           <th><span>Availability</span></th>
+           <th><span>traffic</span></th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let element of dg">
+           <td class="lalign">{{element.Site_Name}}</td>
+           <td> {{element.month}}</td>
+           <td> {{element.radio_drop}}</td>
+           <td> {{element.tch_cong}}</td>
+           <td> {{element.ho_out_succ}}</td>
+           <td> {{element.availibility}}</td>
+           <td> {{element.traffic}}</td>
+
+
+   
+       </tbody>
+     </table>
+    </div> 
+   </body>

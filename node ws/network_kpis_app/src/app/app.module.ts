@@ -11,6 +11,7 @@ import { List3gComponent } from './components/list3g/list3g.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

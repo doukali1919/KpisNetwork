@@ -1,5 +1,7 @@
-<p>list3g works!</p>
+<!-- <p>list3g works!</p>
 <table>
+
+    
 
     <tr *ngFor="let element of tg">
         <td>
@@ -9,4 +11,37 @@
             {{element.month}}
         </td>
     </tr>
-</table>
+</table> -->
+
+<body>
+    <div id="wrapper">
+     <h1>LISTE 3G</h1>
+     
+     <table id="keywords" cellspacing="0" cellpadding="0">
+       <thead>
+         <tr>
+           <th><span>SITE NAME</span></th>
+           <th><span>Date</span></th>
+           <th><span>CSDROPE</span></th>
+           <th><span>PS DROP</span></th>
+           <th><span>DATA VOLUME</span></th>
+           <th><span>Disponibilite</span></th>
+           <th><span>traffic</span></th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let element of tg">
+           <td class="lalign">{{element.s_name}}</td>
+           <td> {{element.month}}</td>
+           <td> {{element.CSDROP}}</td>
+           <td> {{element.PSDROP}}</td>
+           <td> {{element.DataVolume}}</td>
+           <td> {{element.Availability}}</td>
+           <td> {{element.traffic_CS}}</td>
+
+
+   
+       </tbody>
+     </table>
+    </div> 
+   </body>
