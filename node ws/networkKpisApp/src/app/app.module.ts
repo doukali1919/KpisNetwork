@@ -8,7 +8,9 @@ import { FindSiteComponent } from './components/find-site/find-site.component';
 import { HttpClientModule } from '@angular/common/http';
 import { List2gComponent } from './components/list2g/list2g.component';
 import { List3gComponent } from './components/list3g/list3g.component';
-
+import { NgxPaginationModule } from 'ngx-pagination';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -23,7 +25,10 @@ import { List3gComponent } from './components/list3g/list3g.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule,
+    Ng2SearchPipeModule,
+    FormsModule      
   ],
   providers: [],
   bootstrap: [AppComponent]

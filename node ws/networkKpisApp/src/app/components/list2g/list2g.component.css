@@ -115,3 +115,8 @@ h1 {
 #keywords tbody tr td.lalign {
   text-align: left;
 }
+
+div{
+  text-align: center;
+  padding: 10px;
+}

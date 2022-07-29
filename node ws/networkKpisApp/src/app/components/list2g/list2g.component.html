@@ -14,7 +14,9 @@
 <body>
     <div id="wrapper">
      <h1>LISTE 2G</h1>
-     
+     <div class="form-group">
+      <input type="text" class="form-control" placeholder="Filter" [(ngModel)]="term">
+  </div>
      <table id="keywords" cellspacing="0" cellpadding="0">
        <thead>
          <tr>
@@ -28,7 +30,7 @@
          </tr>
        </thead>
        <tbody>
-         <tr *ngFor="let element of dg">
+         <tr *ngFor="let element of dg | paginate: { itemsPerPage: 15, currentPage: pages } | filter:term ">
            <td class="lalign">{{element.Site_Name}}</td>
            <td> {{element.month}}</td>
            <td> {{element.radio_drop}}</td>
@@ -41,5 +43,10 @@
    
        </tbody>
      </table>
+     <br>
+     <pagination-controls (pageChange)="pages = $event"></pagination-controls>
+
     </div> 
+    
+
    </body>
